@@ -1,0 +1,191 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/03f3cc550c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+        <nav>
+            <h1 class="name"><span>M</span>EENAKSHI OJHA</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT ME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+            </ul> 
+            <i class="fas fa-bars" onclick="openmenu()"></i>        
+        </nav>
+        <div class="header-text">
+            <p>FULL STACK DEVELOPER</p>
+            <h1>Hi, i'm <span>Meenakshi Ojha</span> <br>From India</h1>
+        </div>
+     </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pic1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore sit sequi eligendi commodi aperiam nulla
+                         quisquam architecto similique doloremque enim dignissimos neque, dolorum ipsa ratione excepturi accusamus 
+                         alias. Possimus, excepturi.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick ="opentabs('skill')">Skills</p>
+                        <p class="tab-links" onclick ="opentabs('experience')">Experience</p>
+                        <p class="tab-links" onclick ="opentabs('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skill">
+                        <ul>
+                            <li><SPAN>PYTHON</SPAN> <br>Basic</li>
+                            <li><SPAN>WEB DEVELOPMENT</SPAN><br>Intermediate</li>
+                            <li><SPAN>SQL</SPAN><br>Basic</li>
+                            <li><SPAN>AWS</SPAN><br>Basic</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                       <p><span style="color: #ff004f;">FRESHER</span> <br>I'm a fresher with the basic knowledge about python,html,css,aws,sql and java script.</p>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><SPAN>2019</SPAN> <br>B.com from madras university</li>
+                            <li><SPAN>2020</SPAN><br>telly from apollo computer education</li>
+                            <li><SPAN>2022</SPAN><br>full stack developer from IT VEDANT</li>
+                        
+                            
+                        </ul>
+                    </div>
+                </div>            
+            </div>
+        </div>
+    </div>
+    <!-- -----------SERVICES-------------------- -->
+    <div id="services">
+        <div class="container" style="font-size: 40px;">My Services</div>
+        <div class="services-list">
+            <div>
+                <h2>WEB DESIGN</h2>
+                <p><b>Conception,design,implementation and maintenance  of websites and other web application</b></p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>SQL</h2>
+                <p><b>Creating, developing and maintaining SQL databases. Ensuring database performance and stablity</b></p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <h2>AWS</h2>
+                <p><b>end to end cloud solutions</b></p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------portfolio--------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div id="work-list">
+                <div id="work">
+                    <img src="1.jpg">
+                    <div class="layer"></div>
+                </div>
+                <div id="work">
+                    <img src="2.jpg">
+                    <div class="layer"></div>
+                </div>
+                <div id="work">
+                    <img src="3.png">
+                    <div class="layer"></div>
+                </div>               
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+
+    <!-- ---------------contact----------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p><i class="fa-sharp fa-solid fa-paper-plane"></i> meenakshiojha49@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91-9150770800</p>
+                    <div class="social-icons">
+                         <a href="https://www.facebook.com/dora.bucchi"><i class="fab fa-facebook"></i></a>
+                         <a href="https://wa.me/message/4XTXYC3APYCYE1"><i class="fab fa-whatsapp"></i></i></a>
+                         <a href="https://instagram.com/ojhameenakshi?igshid=NDk5N2NlZjQ="><i class="fab fa-instagram"></i></a>
+                         <a href="https://www.linkedin.com/in/meenakshi-ojha-67b29b143"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="MeenakshiResume.pdf" class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-reight">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your name" required>
+                        <input type="text" name="Email" placeholder="your email" required>
+                        <textarea name="Message" rows="6" placeholder="your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span><div id="msg"></div></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <i class="fa-regular fa-copyright"></i>Meenakshi. Made with<i class="fa-solid fa-heart"> by easy tutorial</i></p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentabs(tabname){
+            for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+             tabcontent.classList.remove("active-tab");
+            }
+             event.currentTarget.classList.add("active-link");
+             document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu= document.getElementById("sidemenu")
+        function openmenu(){
+            sidemenu.style.right= "0"
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px"
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLJu1JVwNywCx3aTt-8ScZ8oFHu8KkpbPhVIspC8AYh2wJ24LTjYZYwzGv1U6XJDEnOw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML="message sent successfully"
+                setTimeout(function()){
+                    msg.innerHTML=""
+                }5000)
+                form.reset()
+            }))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html
